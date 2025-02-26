@@ -1,0 +1,81 @@
+.restaurant-details {
+    margin: 20px;
+    padding: 20px;
+}
+
+.restaurant-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.restaurant-details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.separator {
+    border-bottom: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+.menu {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li span {
+    display: block;
+    font-size: 1.2em;
+}
+
+.menu li span.price {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #428953;
+}
+
+.menu li button {
+    display: inline-block;
+    margin-right: 25px;
+}

@@ -1,0 +1,23 @@
+.restaurant {
+    font-family: Arial, sans-serif;
+    padding: 3px;
+}
+
+.restaurant p {
+    margin: 1px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.restaurant p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 3px;
+}
+
+.restaurant p:nth-child(2) {
+    font-size: 1rem;
+ 
+}
+

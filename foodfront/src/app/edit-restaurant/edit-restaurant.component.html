@@ -1,0 +1,38 @@
+<div class="edit-restaurant-container" *ngIf="restaurant">
+    <h2>Edit Restaurant</h2>
+    <form #editRestaurantForm="ngForm" (ngSubmit)="onSubmit(editRestaurantForm)">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" [(ngModel)]="restaurant.name" class="form-control" required>
+            <div *ngIf="editRestaurantForm.submitted && !editRestaurantForm.controls['name']?.valid"
+                class="text-danger">
+                Name is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input id="location" type="text" name="location" [(ngModel)]="restaurant.location" class="form-control"
+                required>
+            <div *ngIf="editRestaurantForm.submitted && !editRestaurantForm.controls['location']?.valid"
+                class="text-danger">
+                Location is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Rating</label>
+            <input id="rating" type="number" name="rating" [(ngModel)]="restaurant.rating" class="form-control" required
+                min="1" max="5">
+            <div *ngIf="editRestaurantForm.submitted && !editRestaurantForm.controls['rating']?.valid"
+                class="text-danger">
+                Rating is required and must be between 1 and 5.
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div>
+        <button class="btn-back" style="margin-top: 20px;" (click)="goBack()">Back</button>
+    </div>
+</div>
